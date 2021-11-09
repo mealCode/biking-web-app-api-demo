@@ -26,13 +26,16 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'newlines-between': 'never',
+        'newlines-between': 'always',
         groups: [
           ['builtin', 'external'],
           ['internal', 'parent', 'sibling', 'index'],
         ],
       },
     ],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn'],
+    'no-underscore-dangle': 'off',
   },
   settings: {
     'import/parsers': {
