@@ -48,5 +48,8 @@
     "express-validation": "^3.0.8",
     "mongoose": "^6.0.12",
     "tsconfig-paths": "^3.11.0"
+  },
+  "engines": {
+    "node": "v16.13.0"
   }
 }
