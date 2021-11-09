@@ -50,6 +50,7 @@
     "tsconfig-paths": "^3.11.0"
   },
   "engines": {
-    "node": "v16.13.0"
+    "node": "16.13.0",
+    "npm": "8.1.0"
   }
 }
