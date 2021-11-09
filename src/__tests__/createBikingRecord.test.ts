@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { StatusCodes } from 'http-status-codes';
 
-import Biking from '@src/models/Biking';
+import Biking from 'src/models/Biking';
 import app from '..';
 
 describe('Api Controller', () => {

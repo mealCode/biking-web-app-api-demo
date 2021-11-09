@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import Biking from '@src/models/Biking';
+import Biking from 'src/models/Biking';
 
 const createBikingRecordController = async (req: Request, res: Response) => {
   try {

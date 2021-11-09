@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
-import Biking from '@src/models/Biking';
-import { DeleteBikingReqBodyTypes } from '@src/types/Biking';
+import Biking from 'src/models/Biking';
+import { DeleteBikingReqBodyTypes } from 'src/types/Biking';
 
 const deleteBikingRecordController = async (req: Request, res: Response) => {
   const { _id: recordId } = req.body as DeleteBikingReqBodyTypes;

@@ -3,8 +3,8 @@ import cors from 'cors';
 import { ValidationError } from 'express-validation';
 import mongoose, { ConnectOptions } from 'mongoose';
 
-import router from '@src/routes';
-import configs from '@src/configs';
+import router from 'src/routes';
+import configs from 'src/configs';
 
 const app = express();
 const { PORT, ORIGINS, MONGODB_URL, MONGO_CONFIG } = configs;
@@ -16,11 +16,6 @@ app.use(
   })
 );
 
-app.use('/', (req, res) => {
-  res.status(200).json({
-    message: 'API is active',
-  });
-});
 app.use('/api/biking', router);
 
 app.use((err: ErrorRequestHandler, req: Request, res: Response, next: NextFunction) => {

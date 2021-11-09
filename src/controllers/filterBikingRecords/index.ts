@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
-import Biking from '@src/models/Biking';
-import { FilterBikingReqBodyTypes } from '@src/types/Biking';
+import Biking from 'src/models/Biking';
+import { FilterBikingReqBodyTypes } from 'src/types/Biking';
 
 const filterBikingRecordsController = async (req: Request, res: Response) => {
   const { sorting, filter } = req.body as FilterBikingReqBodyTypes;

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import Biking from '@src/models/Biking';
+import Biking from 'src/models/Biking';
 
 const fetchBikingRecordsController = async (req: Request, res: Response) => {
   const bikingRecords = await Biking.find({});

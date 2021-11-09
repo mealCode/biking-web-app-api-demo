@@ -14,7 +14,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "allowJs": true,
     "paths": {
-      "@src/*": ["src/*"]
+      "src/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts"],
