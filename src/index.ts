@@ -16,6 +16,11 @@ app.use(
   })
 );
 
+app.use('/', (req, res) => {
+  res.status(200).json({
+    message: 'API is active',
+  });
+});
 app.use('/api/biking', router);
 
 app.use((err: ErrorRequestHandler, req: Request, res: Response, next: NextFunction) => {
